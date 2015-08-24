@@ -64,7 +64,7 @@ tmp1 <- rbind(df,names)
 col1 <- gsub("[()]|[-]","",tmp1$V2)
 colnames(tidyData) <- col1
 
-write.csv(x = tidyData,file="./month2Project/courseProjectdata.csv",row.names = FALSE)
+write.table(x = tidyData,file="./month2Project/TidyDataSet.txt",row.names = FALSE)
 
 
 df<-NULL
